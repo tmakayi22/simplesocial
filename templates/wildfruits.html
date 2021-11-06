@@ -1,0 +1,27 @@
+{%  extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+  <table>
+    <tr>
+      <td> <img src="{% static "pics\wildfruits\nwiwa.jpeg" %}"
+        onmouseover="this.src='{% static "pics\wildfruits\nhunguru.jpeg" %}'"
+        onmouseout="this.src='{% static "pics\wildfruits\nwiwa.jpeg" %}'"
+        alt="Can't find pic!"></td>
+
+        <td>,<img src="{% static "pics\wildfruits\mazhanje.jpeg" %}"
+          onmouseover="this.src='{% static "pics\wildfruits\pineapple.jpeg" %}'"
+          onmouseout="this.src='{% static "pics\wildfruits\mazhanje.jpeg" %}'"
+          alt="Can't find pic!"></td>
+
+          <td>,<img src="{% static "pics\wildfruits\tomatoes.jpeg" %}"
+            onmouseover="this.src='{% static "pics\wildfruits\matohwe.jpeg" %}'"
+            onmouseout="this.src='{% static "pics\wildfruits\tomatoes.jpeg" %}'"
+            alt="Can't find pic!"></td
+
+    </tr>
+  </table>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <p>Rusanhi Agriculture</p>
+
+  <table cellpadding="40" cellspacing="20">
+  <tr>
+      <td><img src="{% static "pics\agriculture\mazhanje.jpeg" %}"
+        onmouseover="this.src='{% static "pics\agriculture\matohwe.jpeg" %}'" onmouseout="this.src='{% static "pics\agriculture\mazhanje.jpeg" %}'"
+        alt="Can't find pic" width="250" height="auto"></td>
+
+      <td><img src="{% static "pics\agriculture\nwiwa.jpeg" %}"
+        onmouseover="this.src='{% static "pics\agriculture\tomatoes.jpeg" %}'" onmouseout="this.src='{% static "pics\agriculture\nwiwa.jpeg" %}'"
+        alternate="Can't find pic" width="250" height="auto"></td>
+
+      <td><img src="{% static "pics\agriculture\pineapple.jpeg" %}"
+        onmouseover="this.src='{% static "pics\agriculture\nhunguru.jpeg" %}'" onmouseout="this.src='{% static "pics\agriculture\pineapple.jpeg" %}'"
+        alternate="Can't find pic" width="250" height="auto"></td>
+</tr>
+  </table>
+{% endblock %}

@@ -26,5 +26,8 @@ urlpatterns = [
     url(r'^test/$', views.TestPage.as_view(), name='test'),
     url(r'^thanks/$', views.ThanksPage.as_view(), name='thanks'),
     url(r'^posts', include('posts.urls', namespace='posts')),
-    url(r'^groups/', include('groups.urls', namespace='groups'))
+    url(r'^groups/', include('groups.urls', namespace='groups')),
+    url(r'^agriculture/$', views.AgriculturePage.as_view(), name='agriculture'),
+    url(r'^wildanimals/$', views.WildAnimalsPage.as_view(), name='wildanimals'),
+    url(r'^wildfruits/$', views.WildFruitsPage.as_view(), name='wildfruits'),
 ]

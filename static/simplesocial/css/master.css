@@ -1,6 +1,16 @@
-body{
+/* body{
 margin: 0;
 overflow: hidden;
 background-color: black;
-color: white;  
+color: red;
+} */
+p{
+  font-weight: bold;
+  color: red;
+}
+
+table{
+  border: 5px;
+  padding: 30px;
+  height: 250px;
 }

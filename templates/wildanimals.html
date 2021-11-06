@@ -1,0 +1,23 @@
+{% extends base.html %}
+{% load static %}
+
+{% block content %}
+  <p>Wild Animals in Rusanhi</p>
+
+  <table cellpadding="40" cellspacing="20">
+    <tr>
+        <td><img src="{% static "pics\wildanimals\gudo.jpeg" %}"
+          onmouseover="this.src='{% static "pics\wildanimals\leopard.jpeg" %}'" onmouseout="this.src='{% static "pics\wildanimals\gudo.jpeg" %}'"
+          alt="Can't find pic" width="250" height="auto"></td>
+
+        <td><img src="{% static "pics\wildanimals\Ngwarati.jpeg" %}"
+          onmouseover="this.src='{% static "pics\wildanimals\gudo.jpeg" %}'" onmouseout="this.src='{% static "pics\wildanimals\Ngwarati.jpeg" %}'"
+          alternate="Can't find pic" width="250" height="auto"></td>
+
+          <td><img src="{% static "pics\wildanimals\leopard.jpg" %}"
+            onmouseover="this.src='{% static "pics\wildanimals\Ngwarati.jpg" %}'" onmouseout="this.src='{% static "pics\wildanimals\leopard.jpg" %}'"
+            alternate="Can't find pic" width="250" height="auto"></td>
+    </tr>
+  </table>
+
+{% endblock %}

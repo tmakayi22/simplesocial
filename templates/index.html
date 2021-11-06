@@ -1,7 +1,50 @@
 {% extends "base.html" %}
+{% load static %}
 
 
 {% block content %}
-  <h1>Welcome to Mutasa Social!</h1>
+  <h1>Welcome to Rusanhi Development Association!</h1>
+  <!-- <a target="_blank" href='https://www.facebook.com/'><i class='fa fa-facebook'>Facebook</i></a> -->
+  <p></p>
+  <!-- <video controls src="{% static "pics\videos\road_is_required.mp4"%}" type="video/mp4" autoplay poster="posterimage.jpg"></video> -->
+  <style media="screen">
+    table{
+      width: 750px;
+      border: 5px solid red;
+      cellspacing: 40px;
+    }
+  </style>
 
+  <p>Road ingodiwa anhuwe! Ngatishandei tiwake yedu!</p>
+  <a target="_blank" align=center href= "templates/wildanimals.html" target="_blank">Animals</a>
+
+  <table>
+  <tr>
+      <td><img src="{% static "pics\people\vanhu_madzimai.jpeg" %}"
+        onmouseover="this.src='{% static "pics\sportsedu\bhora.jpeg" %}'" onmouseout="this.src='{% static "pics\people\vanhu_madzimai.jpeg" %}'"
+        alt="Can't find pic" width="250" height="auto"></td>
+
+      <td><img src="{% static "pics\people\rural_bus.jpeg" %}"
+        onmouseover="this.src='{% static "pics\landscape\view2.jpg" %}'" onmouseout="this.src='{% static "pics\people\rural_bus.jpeg" %}'"
+        alternate="Can't find pic" width="250" height="auto"></td>
+
+      <td><img src="{% static "pics\wildanimals\leopard.jpg" %}"
+        onmouseover="this.src='{% static "pics\wildanimals\Ngwarati.jpg" %}'" onmouseout="this.src='{% static "pics\wildanimals\leopard.jpg" %}'"
+        alternate="Can't find pic" width="250" height="auto"></td>
+</tr>
+  </table>
+
+  <p></p>
+
+  <table>
+    <tr>
+        <td><a href='#' target="_blank">Mutasa Rural District Council</a></td>
+
+        <td><a href="http://www.maphill.com/zimbabwe/manicaland/mutasa/" target="_blank">Maps of Mutasa</a></td>
+
+      <td><a href="https://www.citypopulation.de/php/zimbabwe-admin.php?adm2id=106" target="_blank">Mutasa Population</a></td>
+    <td><a href="https://www.facebook.com/mutasardc/" target="_blank">Mutasa on Facebook</a></td>
+
+    </tr>
+</table>
 {% endblock %}
